@@ -1,0 +1,87 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+}
+
+main .first {
+  display: flex;
+  flex-direction: column;
+}
+
+main .first h2 {
+  font-size: 18px;
+  color: #ff6060;
+  margin-top: 15px;
+}
+
+main .second h3 {
+  font-size: 14px;
+  color: #ff6060;
+  margin-top: 5px;
+}
+
+main .second .tags {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+main .second {
+  margin-bottom: 16px;
+}
+
+main .second .tags .tag {
+  background-color: #ff6060;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 4px 12px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+main .second .logement_precisions{
+  display: flex;
+  justify-content:space-between;
+   margin-top: 12.5px;
+}
+
+main .second .rating{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+main .second .rating .star{
+ font-size:15px;
+ margin-right: 4px;
+ color: #E3E3E3;
+}
+
+main .second .rating .full{
+ color: #ff6060;
+}
+
+main .second .host{
+  display: flex;
+   align-items:center;
+  justify-content:center;
+}
+
+main .second .host p{
+  text-align: right;
+  color: #ff6060;
+  font-size:12px;
+  font-weight:500;
+  margin-right: 10.5px;
+}
+
+main .second .host img{
+  width:32px;
+  height:32px;
+  border-radius: 100%;
+}

@@ -1,0 +1,60 @@
+.app {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav {
+  width: 140px;
+  height: 17px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: #ff6060;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav .current {
+  text-decoration: underline;
+}
+
+@media (min-width: 830px) {
+  .app {
+    padding: 40px 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .app {
+    padding: 40px 70px;
+  }
+
+  header img {
+    height: 68px;
+    width: 210.32px;
+  }
+
+  header nav {
+    width: 309px;
+    height: 34px;
+  }
+
+  header nav a {
+    font-size: 24px;
+    text-transform: none;
+  }
+}

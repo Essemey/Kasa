@@ -1,0 +1,23 @@
+.gallery {
+  width: 335px;
+  height: 255px;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.gallery span{
+  color: white;
+  font-size: 24px;
+}
+
+.gallery .right {
+  margin-right: 10px;
+}
+
+.gallery .left {
+  margin-left: 10px;
+}

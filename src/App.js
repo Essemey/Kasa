@@ -1,25 +1,88 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './Css/App.css';
+import Home from './Components/Home';
+import Logement from './Components/Logement'
+import NotFound from './Components/404'
+import About from './Components/About'
+import Footer from './Components/Footer'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      logements: [],
+    }
+
+  }
+
+  componentDidMount() {
+    (async () => {
+      const response = await fetch('/logements.json');
+      const logements = await response.json();
+
+      if (response.ok) {
+        this.setState(s => ({ ...s, logements: logements }));
+      }
+    })()
+  }
+
+  render() {
+
+    return (
+      <Router>
+        <div className="app">
+          <header className="navbar">
+            <h1>
+              <img src="/Images/LOGO.svg" alt="Kasa" />
+            </h1>
+            <nav>
+              <NavLink exact to="/" activeClassName="current">Accueil</NavLink>
+              <NavLink to="/about" activeClassName="current">A Propos</NavLink>
+            </nav>
+          </header>
+          <Switch>
+            <Route exact path="/"
+              render={() =>
+                <Home logements={this.state.logements} />
+              }
+            />
+
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route exact path="/logement/:id" children={({ match }) => {
+
+              if (this.state.logements.length !== 0) {
+
+                const validLogement = this.state.logements.find(logement => match.params.id === logement.id)
+
+                return validLogement !== undefined
+                  ?
+                  <Logement match={match} logement={validLogement} />
+                  :
+                  <NotFound />
+              }
+
+              return null;
+            }
+            } />
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </Router>
+    )
+  }
+
 }
 
 export default App;
