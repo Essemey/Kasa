@@ -9,7 +9,7 @@ class NotFound extends React.Component {
         return (
             <section className="notFound">
                 <h3>404</h3>
-                <h2>Oups! La page que <br /> vous demandez n'existe pas.</h2>
+                <h2>Oups! La page que vous demandez n'existe pas.</h2>
                 <a href="/">Retourner sur la page d'accueil</a>
             </section>
         )

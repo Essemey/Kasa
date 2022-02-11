@@ -12,11 +12,11 @@ class Home extends React.Component {
             <main className="home">
                 <div id="intro">
                     <h2>Chez vous, partout et ailleurs</h2>
-                        <picture>
-                             <source srcset="/Images/T/intro.jpg"
-                                media="(min-width: 376px)"></source>
-                            <img src="/Images/M/intro.jpg" alt="Paysage" />
-                        </picture>
+                    <picture>
+                        <source srcSet="/Images/T/intro.jpg"
+                            media="(min-width: 480px)"></source>
+                        <img src="/Images/M/intro.jpg" alt="Paysage" />
+                    </picture>
                 </div>
 
                 <section id="logements">

@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Css/Logement.css'
-import Gallery from './Gallery'
-import Collapse from './Collapse'
+import Gallery from '../Components/Gallery'
+import Collapse from '../Components/Collapse'
 
 class Logement extends React.Component {
+
 
 
     render() {
@@ -45,8 +46,8 @@ class Logement extends React.Component {
                 </section >
 
                 <section className="third">
-                    <Collapse title="Description" content={this.props.logement.description} type="text" />
-                    <Collapse title="Équipements" content={this.props.logement.equipments} type="list" />
+                    <Collapse title="Description" class="collapse-logement" content={this.props.logement.description} type="text" />
+                    <Collapse title="Équipements" class="collapse-logement" content={this.props.logement.equipments} type="list" />
                 </section>
             </main>
         )

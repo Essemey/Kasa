@@ -1,9 +1,9 @@
 import React from 'react';
 import './Css/App.css';
-import Home from './Components/Home';
-import Logement from './Components/Logement'
-import NotFound from './Components/404'
-import About from './Components/About'
+import Home from './Pages/Home';
+import Logement from './Pages/Logement'
+import NotFound from './Pages/404'
+import About from './Pages/About'
 import Footer from './Components/Footer'
 import {
   BrowserRouter as Router,
@@ -44,7 +44,7 @@ class App extends React.Component {
             </h1>
             <nav>
               <NavLink exact to="/" activeClassName="current">Accueil</NavLink>
-              <NavLink to="/about" activeClassName="current">A Propos</NavLink>
+              <NavLink to="/about" activeClassName="current">À Propos</NavLink>
             </nav>
           </header>
           <Switch>

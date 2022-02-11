@@ -33,6 +33,7 @@ class Gallery extends React.Component {
         return (
             <div className="gallery" style={{ backgroundImage: `url(${this.props.pictures[`${this.state.currentPictureIndex}`]})` }}>
                 <span className="material-icons left" onClick={this.handleLeftClick}>&#xE5E0;</span>
+                <span className="indicator">{`${this.state.currentPictureIndex + 1}/${this.props.pictures.length}`}</span>
                 <span className="material-icons right" onClick={this.handleRightClick}>&#xE5E1;</span>
             </div>
         )

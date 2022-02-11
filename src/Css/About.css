@@ -4,10 +4,41 @@ main .mask{
     height:100%;
     display: flex;
     margin-bottom: 19px;
-    min-width: 335px;
+    width: 100%;
 }
 
 main img{
    border-radius: 10px;
    opacity: 0.7;
+   width: 100%;
+   object-fit: cover;
+   max-height: 223px;
+}
+
+@media (min-width: 600px){
+    main #collapses{
+        padding: 0px 7vw;
+    }
+
+    main img{
+   height: 223px;
+}
+}
+
+@media (min-width: 768px){
+
+    main .mask{
+        margin-bottom: 33px;
+    }
+
+    main img{
+   min-height: 190px;
+}
+}
+
+@media (min-width: 1024px){
+
+main img{
+    min-height: 223px;
+}
 }

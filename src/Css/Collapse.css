@@ -61,6 +61,7 @@
     font-size: 26px;
     margin-right: 5px;
     color: white;
+    cursor: pointer;
 }
 
 .collapse .open{
@@ -69,4 +70,180 @@
 
 .collapse .close{
     transform: rotate(0deg);
+}
+
+@media (min-width: 768px) {
+
+    .collapse-logement header{
+    height:40px;
+}
+
+.collapse-logement header h4{
+    font-size: 15px;
+}
+
+.collapse-logement .arrow{
+    font-size: 30px;
+}
+
+.collapse-logement ul li{
+    font-size:15px;
+}
+
+.collapse-logement p{
+    font-size:15px;
+      padding-top: 26px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-left: 13.5px;
+}
+
+.collapse-logement ul{
+       padding-top: 26px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-left: 13.5px;
+}
+
+.collapse-about{
+    margin-bottom: 33px;
+}
+
+ .collapse-about header{
+    height:47px;
+}
+
+.collapse-about header h4{
+    font-size: 20px;
+}
+
+.collapse-about .arrow{
+    font-size: 35px;
+}
+
+.collapse-about ul li{
+    font-size:18px;
+}
+
+.collapse-about p{
+    font-size:18px;
+      padding-top: 26px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-left: 13.5px;
+}
+
+.collapse-about ul{
+       padding-top: 26px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-left: 13.5px;
+}
+
+}
+
+@media (min-width: 900px) {
+
+    .collapse-about header h4{
+    font-size: 24px;
+}
+
+.collapse-about .arrow{
+    font-size: 38px;
+}
+
+.collapse-about ul li{
+    font-size:24px;
+}
+
+.collapse-about p{
+    font-size:24px;
+      padding-top: 33px;
+    padding-bottom: 20px;
+    padding-right: 27px;
+    padding-left: 18px;
+}
+
+.collapse-about ul{
+       padding-top: 33px;
+    padding-bottom: 20px;
+    padding-right: 27px;
+    padding-left: 18px;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.collapse-logement{
+    width: 48%;
+}
+
+.collapse-logement header{
+    height:46px;
+}
+
+.collapse-logement header h4{
+    font-size: 16.5px;
+}
+
+.collapse-logement ul li{
+    font-size:16.5px;
+    margin-bottom: 6px;
+}
+
+.collapse-logement p{
+    font-size:16.5px;
+      padding-top: 32px;
+    padding-bottom: 16px;
+    padding-right: 12px;
+    padding-left: 15.5px;
+}
+
+.collapse-logement ul{
+       padding-top: 32px;
+    padding-bottom: 16px;
+    padding-right: 12px;
+    padding-left: 15.5px;
+}
+
+.collapse-logement .arrow{
+    font-size: 35px;
+}
+
+}
+
+@media (min-width: 1330px) {
+
+      .collapse-logement header{
+    height:52px;
+}
+
+.collapse-logement header h4{
+    font-size: 18px;
+}
+
+.collapse-logement .arrow{
+    font-size: 40px;
+}
+
+.collapse-logement ul li{
+    font-size:18px;
+}
+
+.collapse-logement p{
+    font-size:18px;
+      padding-top: 40px;
+    padding-bottom: 53px;
+    padding-right: 12px;
+    padding-left: 20px;
+}
+
+.collapse-logement ul{
+          padding-top: 40px;
+    padding-bottom: 27px;
+    padding-right: 12px;
+    padding-left: 20px;
+}
+
 }

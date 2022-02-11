@@ -20,7 +20,7 @@ class Collapse extends React.Component {
 
 
         return (
-            <article className="collapse">
+            <article className={`collapse ${this.props.class}`}>
                 <header>
                     <h4>{this.props.title}</h4>
                     <span className={`material-icons arrow ${this.state.open ? 'open' : 'close'}`}

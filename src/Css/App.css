@@ -32,6 +32,23 @@ header nav .current {
   text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+  .app {
+    padding: 30px 30px;
+  }
+
+  header nav a {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+header nav {
+  width: 200px;
+  height: 30px;
+}
+
+}
+
 @media (min-width: 830px) {
   .app {
     padding: 40px 40px;
@@ -57,4 +74,12 @@ header nav .current {
     font-size: 24px;
     text-transform: none;
   }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    padding: 40px 100px;
+  }
+
+
 }

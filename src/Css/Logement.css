@@ -28,7 +28,10 @@ main .second .tags {
 }
 
 main .second {
-  margin-bottom: 16px;
+  margin-bottom: 16.5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 main .second .tags .tag {
@@ -84,4 +87,122 @@ main .second .host img{
   width:32px;
   height:32px;
   border-radius: 100%;
+}
+
+
+@media (min-width: 768px) {
+
+main .first h2 {
+  font-size: 24px;
+}
+
+main .second h3 {
+  font-size: 15px;
+}
+
+main .second .tags .tag {
+  font-size: 11.5px;
+  padding: 6px 14px;
+}
+
+main .second .rating .star{
+ font-size:22px;
+ margin-right: 6px;
+}
+
+main .second .host p{
+  font-size:15px;
+}
+
+main .second .host img{
+  width:48px;
+  min-height:48px;
+  height:48px;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+main .third {
+  display:flex;
+  justify-content: space-between;
+}
+
+main .first h2 {
+  font-size: 30px;
+}
+
+main .second h3 {
+  font-size: 16.5px;
+}
+
+main .second .tags .tag {
+  font-size: 12.5px;
+}
+
+main .second .rating .star{
+ font-size:26px;
+}
+
+
+main .second .host p{
+  font-size:16.5px;
+}
+
+main .second .host img{
+  width:56px;
+  height:56px;
+}
+
+}
+
+@media (min-width: 1330px) {
+
+
+main .second .logement_precisions{
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: flex-end;
+   position: absolute;
+   bottom: 12px;
+}
+
+
+main .first h2 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+
+main .second h3 {
+  font-size: 18px;
+}
+
+main .second .tags{
+  margin-top: 20px;
+}
+
+main .second .tags .tag {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+main .second .rating{
+ margin-top: 24px;
+}
+
+main .second .rating .star{
+ font-size:30px;
+}
+
+main .second .host p{
+  font-size:18px;
+}
+
+main .second .host img{
+  width:64px;
+  height:64px;
+}
+
 }
